@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import Header from './components/Header'
+import WelcomePage from './components/WelcomePage'
 import './App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <main>
       <Header />
       {/* <TabNav /> */}
-      {/* <WelcomePage /> */}
+      <WelcomePage />
       {/* <AppRouter /> */}
     </main>
   );
