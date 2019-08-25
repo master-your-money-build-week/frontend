@@ -1,29 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const DIVSECTION = styled.div`
+display: flex; 
+flex-direction: row;
+margin: auto;
+justify-content: space-between;
+`
+const H1 = styled.h1`
+margin-left: 2%;
+`
 
 const HEADERDIV = styled.div`
-display: flex;
-justify-content: center;
 `
-const SECTION1 = styled.div`
-border-top: 3px solid lightgrey;
+const SECTION = styled.div`
+width: 110%;
 `
 
 
 export default function Header(){
     return(
-        <div>
+        <DIVSECTION>
+          
             <HEADERDIV className='header-background'>
                 <section>
                     {/* <img</img> */}
                 </section>
-                <section>
-                    <h1>Master Your Money</h1>
-                </section>
+                <SECTION>
+                    <H1>Master Your Money</H1>
+                </SECTION>
+        
             </HEADERDIV>
-            <SECTION1></SECTION1>
-        </div>
+       
+        </DIVSECTION>
     
 
   
