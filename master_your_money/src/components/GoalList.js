@@ -11,10 +11,10 @@ justify-content: center;
 function GoalList (){
 
     const [goals, setGoals] = useState([])
+    
 
     const handleSubmit = event => {
-            // setGoals({ ...goals, })
-            console.log(event.target)
+            setGoals([...goals, "" ])
         }
      
 
@@ -24,10 +24,13 @@ function GoalList (){
                 <h1>Master Your Money</h1>
             </HEADERDIV>
 
-            <Goal goals={goals}/>
+            <Button onClick={handleSubmit}>Add new goal</Button>
+           
+            {goals.map(goal => (
+                <Goal goals={goals}/>
+            ))}
 
-            <Button onClick={handleSubmit}>Create new goal</Button>
-            {/* map goals here */}
+
         </div>
     );
 }
