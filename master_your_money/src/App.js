@@ -8,8 +8,14 @@ function App() {
   return (
     <main>
       <Header />
+      {/* <TabNav /> */}
+      {/* <WelcomePage /> */}
+      {/* <LoginPage /> */}
+      {/* <AppRouter /> */}
+
       <TabNav />
       <AppRouter />
+
     </main>
   );
 }
