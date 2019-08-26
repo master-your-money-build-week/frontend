@@ -3,10 +3,10 @@ import { Button, Card, Icon, Image, Tab, Menu, Progress } from 'semantic-ui-reac
 import Goal from './Goal.js'
 import styled from 'styled-components';
 
-const HEADERDIV = styled.div`
-display: flex;
-justify-content: center;
-`
+// const HEADERDIV = styled.div`
+// display: flex;
+// justify-content: center;
+// `
 
 function GoalList (){
 
@@ -20,9 +20,9 @@ function GoalList (){
 
     return(
         <div>
-            <HEADERDIV>
+            {/* <HEADERDIV>
                 <h1>Master Your Money</h1>
-            </HEADERDIV>
+            </HEADERDIV> */}
 
             <Button onClick={handleSubmit}>Add new goal</Button>
            

@@ -1,12 +1,23 @@
 import React from "react";
+import styled from 'styled-components';
+
+
+const MAINIMG = styled.img`
+// width: 100%;
+`
+
+const HEAD = styled.div`
+display: flex; 
+justify-content: center;
+`
+
 
 export default function WelcomePage() {
     return (
         <section className="welcome-page">
-            <header>
-                <h1>Welcome to the ultimate fan site!</h1>
-                <img></img>
-            </header>
+            <HEAD>
+                <MAINIMG className='home-page-main-photo' src='home-page.jpg'></MAINIMG>
+            </HEAD>
         </section>
     );
 }
