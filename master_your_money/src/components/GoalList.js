@@ -11,8 +11,6 @@ import styled from 'styled-components';
 function GoalList (){
 
     const [goals, setGoals] = useState([])
-    
-
     const handleSubmit = event => {
             setGoals([...goals, "" ])
         }
