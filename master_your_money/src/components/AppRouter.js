@@ -8,9 +8,13 @@ import WelcomePage from './WelcomePage'
 export default function AppRouter() {
     return (
         <section>
-            <Route exact path='/welcome' component={ WelcomePage } />
+            <Route path='/welcome' component={ WelcomePage } />
             <Route path='/goallist' component={ GoalList } />
         </section>
 
     )
 };
+
+
+
+
