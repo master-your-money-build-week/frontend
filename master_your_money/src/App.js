@@ -10,9 +10,9 @@ import './App.css';
 function App() {
   return (
     <main>
-      <Route path='/' component={ Header }/>
+      <Route path='/ParentPage' component={ Header }/>
 
-      <Route  path='/' component={ TabNav } />
+      <Route  path='/ParentPage' component={ TabNav } />
       <AppRouter />
 
     </main>
