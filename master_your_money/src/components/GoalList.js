@@ -11,8 +11,6 @@ justify-content: center;
 function GoalList (){
 
     const [goals, setGoals] = useState([])
-    
-
     const handleSubmit = event => {
             setGoals([...goals, "" ])
         }
