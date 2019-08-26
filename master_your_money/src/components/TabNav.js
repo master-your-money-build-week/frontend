@@ -16,7 +16,7 @@ export default function TabNav(){
 
     return(
         <TAB1>
-            <NavLink className='H4' to='/welcome'>
+            <NavLink className='H4' to='/ParentPage/welcomewelcome'>
                 <H4>Home</H4>
             </NavLink>
 
@@ -28,7 +28,7 @@ export default function TabNav(){
                 <H4>Track Expenses</H4>
             </NavLink>
 
-            <NavLink className='H4' to='/goallist'>
+            <NavLink className='H4' to='/ParentPage/goallist'>
                 <H4>Set Goals</H4>
             </NavLink>
         </TAB1>
