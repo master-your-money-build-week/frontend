@@ -10,10 +10,9 @@ import './App.css';
 function App() {
   return (
     <main>
-      <Route exact path='/login' component={LoginPage} />
-      <Route path='/' component={Header}/>
+      <Route path='/' component={ Header }/>
 
-      <Route  path='/' component={TabNav}/>
+      <Route  path='/' component={ TabNav } />
       <AppRouter />
 
     </main>
