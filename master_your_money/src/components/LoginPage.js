@@ -16,9 +16,9 @@ export default function LoginPage() {
             </div>
             <div>
                 <input type="checkbox" />
+                <label>Remember Me</label>
             </div>
             <button>
-                <label>Remember Me</label>
                 <h1>Sign in</h1>
             </button>
             <div>By clicking Sign in, you agree to our Terms and have read and aacknowledge our Privacy Statement</div>
@@ -28,3 +28,5 @@ export default function LoginPage() {
         </section>
     );
 }
+
+//quick edit to change the login file
