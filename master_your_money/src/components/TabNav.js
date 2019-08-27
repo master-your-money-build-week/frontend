@@ -20,7 +20,7 @@ export default function TabNav(){
                 <H4>Home</H4>
             </NavLink>
 
-            <NavLink className='H4'>
+            <NavLink className='H4' to='/ParentPage/budgetlist'>
                 <H4>Create Budget</H4>
             </NavLink>
 

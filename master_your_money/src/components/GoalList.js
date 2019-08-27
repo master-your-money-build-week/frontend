@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Button, Card, Icon, Image, Tab, Menu, Progress } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 import Goal from './Goal.js'
 import styled from 'styled-components';
 
