@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, Icon, Image, Tab, Menu, Progress } from 'semantic-ui-react';
+import { Card, Progress } from 'semantic-ui-react';
 
 const Goal = (props) => {
     return(
