@@ -18,15 +18,10 @@ const BudgetCard = props => {
                         <h2>Monthly Income: {number.income}</h2>
 
                         <H3>Food: {number.food}</H3>
-                        <H3>Food: {number.insurance}</H3>
-                        <H3>Food: {number.phone}</H3>
-                        <H3>Food: {number.rent}</H3>
-                        <H3>Food: {number.utilities}</H3>
-                    
-
-                        <h2>
-                            {number.phone}
-                        </h2>
+                        <H3>Insurance: {number.insurance}</H3>
+                        <H3>Phone: {number.phone}</H3>
+                        <H3>Rent: {number.rent}</H3>
+                        <H3>Utilities: {number.utilities}</H3>
                     </div>
                 );
             })}
