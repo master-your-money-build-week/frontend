@@ -4,12 +4,13 @@ import styled from 'styled-components';
 const DIV = styled.form`
 border: 2px solid gray;
 border-radius: 20px;
-width: 45%;
+width: 75%;
 `
 const FORMDIV = styled.div`
 display: flex;
 flex-wrap: wrap-reverse;
 justify-content: center;
+// width: 80%;
 `
 
 const DIV1 = styled.label`

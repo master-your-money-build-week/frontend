@@ -5,7 +5,9 @@ import GoalCard from "./GoalCard";
 import GoalList from "./GoalList";
 
 const DIV = styled.div`
-
+display: flex;
+flex-direction: column;
+align-items: center;
 `
 
 

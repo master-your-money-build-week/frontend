@@ -3,11 +3,30 @@ import { Button } from 'semantic-ui-react';
 import GoalCard from './GoalCard'
 import styled from 'styled-components';
 
-// const HEADERDIV = styled.div`
-// display: flex;
-// justify-content: center;
-// `
+const MAINDIV = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+display: flex;
+justify-content: center;
+width: 100%;
+`
 
+const DIV = styled.div`
+margin: 3%;
+`
+
+const FORM = styled.form`
+margin: 3%;
+
+
+`
+const INPUT = styled.input`
+// margin: 3%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+height: 35px;
+border: 2px solid navy;
+border-radius: 7px;
+
+`
 
 const GoalList = props => {
 
@@ -30,9 +49,9 @@ const GoalList = props => {
      
 
     return(
-        <div >
-            <form>
-                <input
+        <MAINDIV >
+            <FORM>
+                <INPUT
                     type="text"
                     name="totalGoal"
                     placeholder="Goals"
@@ -40,12 +59,14 @@ const GoalList = props => {
                     onChange={changeHandler}
                 />
 
-            </form>
+            </FORM>
+        <DIV>
+            <Button onClick={submitForm}>Add</Button>
 
-            <button onClick={submitForm}>Add</button>
+        </DIV>
            
 
-        </div>
+        </MAINDIV>
     );
 }
 

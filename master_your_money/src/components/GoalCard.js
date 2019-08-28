@@ -1,18 +1,31 @@
 import React from 'react'
 import { Card, Progress } from 'semantic-ui-react';
 import GoalList from './GoalList';
+import styled from 'styled-components';
+
+const DIV = styled.div`
+margin: 3%;
+`
+const H2 = styled.h2`
+margin: 0;
+`
+const H5 = styled.h5`
+margin: 0;
+padding: 3%;
+`
 
 const Goal = (props) => {
     return(
-        <div>
+        <DIV>
             {props.goalsList.map(goals => {
                 return (
-                    <div className="note" key={goals.id}>
-                        <h2>Monthly Income: {goals.goal}</h2>
-                    </div>
+                    <Card className="note" key={goals.id}>
+                        <H2>Goal</H2>
+                        <H5>{goals.totalGoal}</H5>
+                    </Card>
                 );
             })}
-        </div>
+        </DIV>
     )
 }
 
