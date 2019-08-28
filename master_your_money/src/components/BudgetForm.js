@@ -61,12 +61,6 @@ margin: 2%;
 
 
 
-
-
-
-
-
-
 const BudgetForm = props => {
     const [number, setNote] = useState({ income: "", rent: "", insurance: "", utilities: "", phone: "", food: "" });
 

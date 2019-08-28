@@ -8,7 +8,7 @@ const DIV = styled.div`
 display: flex;
 justify-content: center;
 flex-direction: column;
-align-items: center;
+// align-items: center;
 `
 
 

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Button } from 'semantic-ui-react';
-import Goal from './Goal.js'
+import GoalCard from './GoalCard'
 import styled from 'styled-components';
 
 // const HEADERDIV = styled.div`
@@ -8,26 +8,42 @@ import styled from 'styled-components';
 // justify-content: center;
 // `
 
-function GoalList (){
 
-    const [goals, setGoals] = useState([])
-    const handleSubmit = event => {
-            setGoals([...goals, "" ])
+const GoalList = props => {
+
+    const [goal, setGoal] = useState({ totalGoal: ''})
+
+
+    const changeHandler = event => {
+        setGoal({ ...goal, [event.target.name]: event.target.value });
         }
+    
+    const submitForm = event => {
+        event.preventDefault();
+        console.log('hello')
+        const newGoal = {
+            ...goal,
+            id: Date.now()
+        };
+        props.addNewGoal(newGoal);
+    };
      
 
     return(
-        <div>
-            {/* <HEADERDIV>
-                <h1>Master Your Money</h1>
-            </HEADERDIV> */}
+        <div >
+            <form>
+                <input
+                    type="text"
+                    name="totalGoal"
+                    placeholder="Goals"
+                    value={goal.totalGoal}
+                    onChange={changeHandler}
+                />
 
-            <Button onClick={handleSubmit}>Add new goal</Button>
+            </form>
+
+            <button onClick={submitForm}>Add</button>
            
-            {goals.map(goal => (
-                <Goal goals={goals}/>
-            ))}
-
 
         </div>
     );
