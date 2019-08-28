@@ -16,7 +16,7 @@ export default function TabNav(){
 
     return(
         <TAB1>
-            <NavLink className='H4' to='/ParentPage/welcomewelcome'>
+            <NavLink className='H4' to='/ParentPage/welcome'>
                 <H4>Home</H4>
             </NavLink>
 

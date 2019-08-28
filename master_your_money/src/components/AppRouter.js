@@ -10,7 +10,7 @@ export default function AppRouter() {
     return (
         <section>
             <Route exact path = '/' component = { LoginPage } />
-            <Route path = '/ParentPage/welcomewelcome' component={ WelcomePage } />
+            <Route path = '/ParentPage/welcome' component={ WelcomePage } />
             <Route path = '/ParentPage/goallist' component={ GoalList } />
             
         </section>
