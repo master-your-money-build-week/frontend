@@ -83,6 +83,7 @@ const BudgetForm = props => {
 
         
             <FORMDIV >
+                
                 <DIV1>
                     <INPUT
                         type="text"
