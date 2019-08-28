@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import styled from 'styled-components';
 
 const DIV = styled.form`
-border: 1px solid black;
+border: 2px solid gray;
+border-radius: 20px;
 width: 45%;
 `
 const FORMDIV = styled.div`
@@ -35,7 +36,7 @@ border-radius: 10px;
 const BTN = styled.div`
 margin: 2%;
 display: flex;
-justify-content: center;
+justify-content: end;
 `
 
 
@@ -44,8 +45,17 @@ width: 30%;
 height: 45px;
 background-color: navy
 border-radius: 5%;
-border: 1px solid white;
+border: 1px solid gray;
 color: white;
+border-radius: 10px;
+`
+
+const H2 = styled.h2`
+margin: 2%;
+`
+const H5 = styled.h5`
+margin: 2%;
+
 `
 
 
@@ -58,19 +68,19 @@ color: white;
 
 
 const BudgetForm = props => {
-    const [note, setNote] = useState({ income: "", rent: "", insurance: "", utilities: "", phone: "", food: "" });
+    const [number, setNote] = useState({ income: "", rent: "", insurance: "", utilities: "", phone: "", food: "" });
 
     const changeHandler = event => {
         // const newObj = {...note}
         // newObj[event.target.name] = event.target.value;
-        setNote({ ...note, [event.target.name]: event.target.value });
+        setNote({ ...number, [event.target.name]: event.target.value });
     };
 
     const submitForm = event => {
         event.preventDefault();
         console.log('hello')
         const newNote = {
-            ...note,
+            ...number,
             id: Date.now()
         };
         props.addNewNote(newNote);
@@ -78,8 +88,8 @@ const BudgetForm = props => {
 
     return (
         <DIV onSubmit={submitForm}>
-            <h2>Lets Create a Budget!</h2>
-            <h5>When entering your expenses, enter the monthly rate</h5>
+            <H2>Lets Create a Budget!</H2>
+            <H5>When entering your expenses, enter the monthly rate</H5>
 
         
             <FORMDIV >
@@ -88,7 +98,7 @@ const BudgetForm = props => {
                         type="text"
                         name="phone"
                         placeholder="Phone"
-                        value={note.phone}
+                        value={number.phone}
                         onChange={changeHandler}
                 />
                 </DIV1>
@@ -98,7 +108,7 @@ const BudgetForm = props => {
                         type="text"
                         name="rent"
                         placeholder="Rent/Mortgage"
-                        value={note.rent}
+                        value={number.rent}
                         onChange={changeHandler}
                     />
                 </DIV1>
@@ -108,7 +118,7 @@ const BudgetForm = props => {
                         type="text"
                         name="insurance"
                         placeholder="Insurance"
-                        value={note.insurance}
+                        value={number.insurance}
                         onChange={changeHandler}
                     />
                 </DIV1>
@@ -118,7 +128,7 @@ const BudgetForm = props => {
                         type="text"
                         name="utilities"
                         placeholder="Utilities"
-                        value={note.utilities}
+                        value={number.utilities}
                         onChange={changeHandler}
                     />
                 </DIV1>
@@ -129,7 +139,7 @@ const BudgetForm = props => {
                         type="text"
                         name="income"
                         placeholder="Monthly Income"
-                        value={note.income}
+                        value={number.income}
                         onChange={changeHandler}
                     />
                 </DIV1>
@@ -139,7 +149,7 @@ const BudgetForm = props => {
                         type="text"
                         name="food"
                         placeholder="Food"
-                        value={note.food}
+                        value={number.food}
                         onChange={changeHandler}
                     />
                 </DIV1>
