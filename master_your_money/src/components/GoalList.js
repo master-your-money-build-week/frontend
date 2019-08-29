@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
 import { Button } from 'semantic-ui-react';
-<<<<<<< HEAD
 import Goal from './Goal.js'
 import GoalCard from './GoalCard'
-=======
->>>>>>> 4edb9e685e31ff3e049e9e52a486a03a85f67155
 import styled from 'styled-components';
 
 const MAINDIV = styled.div`
