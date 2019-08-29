@@ -19,7 +19,7 @@ export default function LoginPage() {
                 <label>Remember Me</label>
             </div>
             <button>
-                <h1>Sign in</h1>
+                <a href="/ParentPage/welcome" >Sign in</a>
             </button>
             <div>By clicking Sign in, you agree to our Terms and have read and aacknowledge our Privacy Statement</div>
             <div>Forgot Username/Password?</div>
@@ -28,5 +28,3 @@ export default function LoginPage() {
         </section>
     );
 }
-
-//quick edit to change the login file
