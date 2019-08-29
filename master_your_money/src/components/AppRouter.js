@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import { Route } from "react-router-dom";
 import GoalList from './GoalList'
-import WelcomePage from './WelcomePage'
+import WelcomCard from './WelcomeCard'
 import LoginPage from './LoginPage'
 import BudgetContainer from './BudgetContainer'
 import GoalsContainer from './GoalContainer'
@@ -25,7 +25,7 @@ export default function AppRouter() {
     return (
         <section>
             <Route exact path = '/' component = { LoginPage } />
-            <Route path = '/ParentPage/welcomewelcome' component={ WelcomePage } />
+            <Route path='/ParentPage/welcomewelcome' component={WelcomCard } />
             <Route path='/ParentPage/budgetlist' render={props => (<BudgetContainer {...props} notesList={notes} addNewNote={addNewNote}/>) }/>
             <Route path='/ParentPage/goallist' render={props => (<GoalsContainer {...props} goalsList={goals} addNewGoal={addNewGoal} />)} />
         </section>
