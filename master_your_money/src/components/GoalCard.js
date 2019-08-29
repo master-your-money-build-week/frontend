@@ -1,6 +1,5 @@
 import React from 'react'
-import { Card, Progress } from 'semantic-ui-react';
-import GoalList from './GoalList';
+import { Card } from 'semantic-ui-react';
 import styled from 'styled-components';
 
 const DIV = styled.div`
