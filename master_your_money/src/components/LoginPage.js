@@ -28,5 +28,3 @@ export default function LoginPage() {
         </section>
     );
 }
-
-//quick edit to change the login file

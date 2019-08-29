@@ -16,7 +16,7 @@ export default function WelcomePage() {
     return (
         <section className="welcome-page">
             <HEAD>
-                <MAINIMG className='home-page-main-photo' src='test.jpg'></MAINIMG>
+                <MAINIMG className='home-page-main-photo' src='home-page.jpg'></MAINIMG>
             </HEAD>
         </section>
     );

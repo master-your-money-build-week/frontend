@@ -24,7 +24,7 @@ export default function TabNav(){
                 <H4>Create Budget</H4>
             </NavLink>
 
-            <NavLink className='H4'>
+            <NavLink className='H4' to='/ParentPage/TrackExpenses'>
                 <H4>Track Expenses</H4>
             </NavLink>
 
