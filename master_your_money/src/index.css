@@ -38,3 +38,16 @@ main{
   width: 50%;
 }
 
+.inputfocus:focus {
+  border: 1px solid #1DB954 ;
+  background-color: #FFFAFA;
+}
+
+.forgot-user:hover{
+  color: blue;
+  text-decoration: underline;
+
+}
+.forgot-user{
+  color: #1DB954;
+}
