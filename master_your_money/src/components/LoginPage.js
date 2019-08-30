@@ -97,7 +97,9 @@ export default function LoginPage() {
         <SECTIONDIV>
 
             <BOTTOMDIV>
-                <BTN href="/ParentPage/welcome" >Sign in</BTN>
+                <BTN>
+                    <a className='a-tag-style'href="/ParentPage/welcome" >Sign in</a>
+                </BTN>
                 <DIV4>
                     <input type="checkbox" />
                     <LABEL>Remember Me</LABEL>
