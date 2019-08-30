@@ -32,6 +32,9 @@ export default function UserList() {
         return (
           <UserCard
             avatar={data.avatar}
+            first_name={data.first_name}
+            last_name={data.last_name}
+            email={data.email}
           />
         )
       })}

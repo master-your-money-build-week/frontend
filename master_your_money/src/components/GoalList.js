@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import { Button } from 'semantic-ui-react';
-import Goal from './Goal.js'
 import GoalCard from './GoalCard'
 import styled from 'styled-components';
 
