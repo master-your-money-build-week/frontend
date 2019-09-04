@@ -6,7 +6,8 @@ const H3 = styled.h3`
 
 `
 const DIV = styled.div`
-border: 1px solid blue;
+border: 2px solid gray;
+border-radius: 10px;
 margin-top: 5%;
 padding: 2%;
 width: 400px;
