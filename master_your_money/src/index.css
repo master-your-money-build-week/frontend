@@ -43,6 +43,11 @@ main{
   background-color: #FFFAFA;
 }
 
+.inputfocus1:focus{
+  border: 1px solid #DC143C ;
+  background-color: #FFFAFA;
+}
+
 .forgot-user:hover{
   color: blue;
   text-decoration: underline;

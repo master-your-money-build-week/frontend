@@ -5,7 +5,12 @@ import styled from 'styled-components';
 const H3 = styled.h3`
 
 `
-
+const DIV = styled.div`
+border: 1px solid blue;
+margin-top: 5%;
+padding: 2%;
+width: 400px;
+`
 
 const BudgetCard = props => {
 
@@ -14,15 +19,15 @@ const BudgetCard = props => {
         <div>
             {props.notesList.map(number => {
                 return (
-                    <div className="note" key={number.id}>
-                        <h2>Monthly Income: {number.income}</h2>
+                    <DIV className="note" key={number.id}>
+                        <H3>Monthly Income: {number.income}</H3>
 
                         <H3>Food: {number.food}</H3>
                         <H3>Insurance: {number.insurance}</H3>
                         <H3>Phone: {number.phone}</H3>
                         <H3>Rent: {number.rent}</H3>
                         <H3>Utilities: {number.utilities}</H3>
-                    </div>
+                    </DIV>
                 );
             })}
 

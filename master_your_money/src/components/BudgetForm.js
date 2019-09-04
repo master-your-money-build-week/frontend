@@ -28,7 +28,8 @@ border-radius: 10px;
 
 `
 const INPUT1 = styled.input`
-border: 2px solid green;
+border: 2px solid grey;
+
 padding: 4%;
 border-radius: 10px;
 `
@@ -91,6 +92,7 @@ const BudgetForm = props => {
                 
                 <DIV1>
                     <INPUT
+                        className='inputfocus1'
                         type="text"
                         name="phone"
                         placeholder="Phone"
@@ -101,6 +103,7 @@ const BudgetForm = props => {
 
                 <DIV1>
                     <INPUT
+                        className='inputfocus1'
                         type="text"
                         name="rent"
                         placeholder="Rent/Mortgage"
@@ -111,6 +114,7 @@ const BudgetForm = props => {
 
                 <DIV1>
                     <INPUT
+                        className='inputfocus1'
                         type="text"
                         name="insurance"
                         placeholder="Insurance"
@@ -121,6 +125,7 @@ const BudgetForm = props => {
 
                 <DIV1>
                     <INPUT
+                        className='inputfocus1'
                         type="text"
                         name="utilities"
                         placeholder="Utilities"
@@ -132,6 +137,7 @@ const BudgetForm = props => {
 
                 <DIV1>
                     <INPUT1
+                        className='inputfocus'
                         type="text"
                         name="income"
                         placeholder="Monthly Income"
@@ -142,6 +148,7 @@ const BudgetForm = props => {
 
                 <DIV1>
                     <INPUT
+                        className='inputfocus1'
                         type="text"
                         name="food"
                         placeholder="Food"
